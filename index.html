@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./src/sass/main.css" />
+    <link rel="stylesheet" type="text/css" href="./src/sass/main.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -29,7 +29,7 @@
             <!-- <svg class="auth-nav__icon" width="95" height="">
               <use href="./src/images/svg/Logo.svg"></use>
             </svg> -->
-            <img src="./src/images/svg/Logo.svg" alt="logo Maykon"> 
+            <img src="./src/images/svg/Logo.svg" alt="logo Maykon" />
           </a>
 
           <ul class="site-nav list">
@@ -123,14 +123,49 @@
         </div>
       </div>
     </header>
-    <!-- <div class="intro">
-        <div class="intro-media">
-           <video class="intro-media-video" src="../src/images/video/Шапка.mp4" autoplay muted loop></video>
-        </div>
-        <div class="intro-content">
-            <h1></h1>
-        </div>
-      </div> -->
+    <!-- Видеофон -->
+    <section class="intro">
+      <div class="intro-media">
+        <video
+          class="intro-media-video"
+          src="../src/images/video/Шапка.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <div class="intro-content">
+        <h1 class="intro-content">Добро пожаловать</h1>
+        <h2 class="intro-content">на мой сайт</h2>
+      </div>
+    </section>
+    <!-- Преимущества -->
+
+    <section class="section-special-first">
+      <div class="container">
+        <h2 class="is-hidden">Список преимуществ</h2>
+
+        <ul class="feature__list list">
+          <li class="feature__item icon-experience">
+            <h3 class="feature__title">20</h3>
+            <p class="feature__text">Years of experience</p>
+          </li>
+          <li class="feature__item icon-projects">
+            <h3 class="feature__title">1000</h3>
+            <p class="feature__text">Project completed</p>
+          </li>
+          <li class="feature__item icon-engenners">
+            <h3 class="feature__title">500</h3>
+            <p class="feature__text">Experts</p>
+          </li>
+          <li class="feature__item icon-countries">
+            <h3 class="feature__title">5</h3>
+            <p class="feature__text">Coutries</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <script src="./src/js/modal.js"></script>
     <script src="./src/js/menu.js"></script>
     <script src="./build/build.js"></script>

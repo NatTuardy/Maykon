@@ -1,10 +1,17 @@
 .section,
 .section-special-first,
 .section-special-second {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+.section-special-first {
+  background-color: var(--primary-background-color);
+}
+
+.section-special-second {
+  background-color: var(--secondary-background-color);
+}
 // @media screen and (min-width: 768px) {
 //   .section,
 //   .section-special-first,
@@ -16,8 +23,8 @@
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .section-special-first {

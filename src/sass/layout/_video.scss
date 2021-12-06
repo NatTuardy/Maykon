@@ -1,0 +1,47 @@
+//video
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.intro-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #ccc url("./../images/jpg/fon.jpg") no-repeat center center;
+  background-size: cover;
+  // background-image: url(../../images/jpg/fon.jpg);
+}
+
+.intro-media::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.intro-media-video {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.intro-content {
+  z-index: 10;
+  color: white;
+  text-align: center;
+}

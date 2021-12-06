@@ -1,11 +1,12 @@
 :root {
-  --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --title-text-color: #212121;
-  --secondary-background-color: #2f303a;
-  --special-background-color: #f5f4fa;
+  --accent-color: #6759f6;
+  --primary-text-color: #353646;
+  --secondary-text-color: #576165;
+  --additional-text-color: #c3d0d5;
+  --primary-background-color: rgba(0, 0, 0, 0.05);
+  --secondary-background-color: rgba(248, 248, 248, 0.4);
+  --special-background-color: #2a3a51;
 }
 
 .is-hidden {
@@ -16,10 +17,21 @@
 
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 h1,
@@ -96,14 +108,22 @@ img {
 .section,
 .section-special-first,
 .section-special-second {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-special-first {
+  background-color: var(--primary-background-color);
+}
+
+.section-special-second {
+  background-color: var(--secondary-background-color);
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .section-special-first {
     padding-top: 94px;
@@ -1036,7 +1056,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .intro-media {
@@ -1046,5 +1066,120 @@ img {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: #ccc url("./../images/jpg/fon.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.intro-media::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.intro-media-video {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro-content {
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+
+.feature__text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.feature__list {
+  text-align: left;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.feature__item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.feature__title {
+  color: var(--title-text-color);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.feature__item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-experience::before {
+  display: block;
+  background-image: url("./../images/svg/Ic_experience.svg");
+  background-size: 70px;
+}
+
+.icon-projects::before {
+  display: block;
+  background-image: url("./../images/svg/Ic_projects.svg");
+  background-size: 70px;
+}
+
+.icon-engenners::before {
+  display: block;
+  background-image: url("./../images/svg/Ic_engenners.svg");
+  background-size: 70px;
+}
+
+.icon-countries::before {
+  display: block;
+  background-image: url("./../images/svg/Ic_countries.svg");
+  background-size: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feature__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+  }
 }
 /*# sourceMappingURL=main.css.map */
