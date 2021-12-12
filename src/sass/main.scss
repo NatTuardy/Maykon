@@ -1,31 +1,32 @@
 // UTILS
-@import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/placeholders';
-@import './utils/mixins';
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 // BASE
-@import './base/common';
-@import './base/container';
-@import './base/section';
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
 
 // COMPONENTS
-@import './components/modal-btn';
-@import './components/social-links-list';
-@import './components/suptitle';
-@import './components/buttons';
-@import './components/title';
-@import './components/social-list';
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
-@import './components/filter';
+@import "./components/modal-btn";
+@import "./components/social-links-list";
+@import "./components/suptitle";
+@import "./components/buttons";
+@import "./components/title";
+@import "./components/social-list";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/filter";
 
 // LAYOUT
-@import './layout/header';
-@import './layout/video';
-@import './layout/features';
-@import './layout/footer';
+@import "./layout/header";
+@import "./layout/video";
+@import "./layout/features";
+@import "./layout/contacts";
+@import "./layout/footer";
 // @import './layout/hero';
 // @import './layout/features';
 // @import './layout/services';
@@ -33,5 +34,4 @@
 // @import './layout/clients';
 // @import './layout/projects';
 // @import './layout/footer';
-// @import './layout/contact-info';
 // @import './layout/services';

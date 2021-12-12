@@ -1,0 +1,110 @@
+.contacts {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    height: 220px;
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .contacts-wrapper {
+    width: 1244px;
+    position: relative;
+    padding: 40px 32px 40px 200px;
+    background: linear-gradient(
+      to right,
+      #72a2dd 0%,
+      #94b5de 13.63%,
+      #bac9df 31.66%,
+      #d8dae0 49.58%,
+      #eee6e1 67.13%,
+      #fbede1 84.14%,
+      #ffffff 100%
+    );
+  }
+
+  .contacts-light-bird {
+    position: absolute;
+    width: 284px;
+    height: 140px;
+    bottom: 40px;
+    right: 32px;
+  }
+
+  .address__item {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .address__subtitle {
+    display: flex;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+
+  .address__link {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .address__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transperent;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border: solid 1px var(--additional-text-color);
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      border: solid 1px var(--accent-color);
+      & .address__icon {
+        fill: var(--accent-color);
+      }
+    }
+  }
+
+  .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .address__icon {
+    fill: var(--additional-text-color);
+  }
+
+  .address__list {
+    display: flex;
+  }
+
+  .address__item {
+    margin-right: 90px;
+  }
+
+  .address__link {
+    justify-content: start;
+  }
+}
