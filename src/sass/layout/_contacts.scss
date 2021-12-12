@@ -1,21 +1,13 @@
-.contacts {
+.contacts-wrapper {
   display: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts {
-    display: flex;
-    height: 220px;
-  }
-
   .contacts-wrapper {
     display: flex;
     flex-direction: row;
     text-align: left;
-  }
-
-  .contacts-wrapper {
-    width: 1244px;
+    height: 220px;
     position: relative;
     padding: 40px 32px 40px 200px;
     background: linear-gradient(

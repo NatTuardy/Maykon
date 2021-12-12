@@ -18,11 +18,9 @@
   <header class="page-header container">
     <div class="flex page-header-tab">
       <nav class="nav flex">
-        <a href="./index.html" class="logo logo__header">
-          <!-- <svg class="auth-nav__icon" width="95" height="">
-              <use href="./src/images/svg/Logo.svg"></use>
-            </svg> -->
-          <img src="./src/images/svg/Logo.svg" alt="logo Maykon" />
+        <a href="./index.html" class="logo logo-header">
+          <img src="./src/images/svg/logo-header.svg" alt="logo Maykon" width="95" height="20" />
+
         </a>
 
         <ul class="site-nav list">
@@ -104,7 +102,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="container">
     <!-- Видеофон -->
     <section class="intro">
       <div class="intro-media">
@@ -136,45 +134,69 @@
           </li>
           <li class="feature__item icon-countries">
             <h3 class="feature__title">5</h3>
-            <p class="feature__text">Coutries</p>
+            <p class="feature__text">Countries</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="contacts">
-      <div class="contacts-wrapper">
-        <address class="address">
-          <ul class="list address__list">
-            <li class="address__item">
+    <!-- Контакты -->
+    <section class="contacts-wrapper container">
+      <address class="address">
+        <ul class="list address__list">
+          <li class="address__item">
 
-              <p class="address__subtitle"><span class="address__button button "><svg class="address__icon" width="10"
-                    height="16">
-                    <use href="./src/images/icons.svg#icon-smartphone"></use>
-                  </svg></span>Позвонить нам</p>
-              <a href="tel:+380677149734" class="link address__link">
+            <p class="address__subtitle"><span class="address__button button "><svg class="address__icon" width="10"
+                  height="16">
+                  <use href="./src/images/icons.svg#icon-smartphone"></use>
+                </svg></span>Позвонить нам</p>
+            <a href="tel:+380677149734" class="link address__link">
 
 
-                +38 067 714 97 34</a>
-            </li>
-            <li class="address__item">
-              <p class="address__subtitle"><span class="address__button button " data-btn-bird-toggle><svg
-                    class="address__icon" width="16" height="12">
-                    <use href="./src/images/icons.svg#icon-envelope" />
-                  </svg></span>Написать нам</p>
-              <a href="mailto:maykon.ukraine@gmail.com" class="link address__link" data-link-bird-toggle>
+              +38 067 714 97 34</a>
+          </li>
+          <li class="address__item">
+            <p class="address__subtitle"><span class="address__button button " data-btn-bird-toggle><svg
+                  class="address__icon" width="16" height="12">
+                  <use href="./src/images/icons.svg#icon-envelope" />
+                </svg></span>Написать нам</p>
+            <a href="mailto:maykon.ukraine@gmail.com" class="link address__link" data-link-bird-toggle>
 
-                <span>maykon.ukraine@gmail.com</span>
-              </a>
-            </li>
-          </ul>
-        </address>
-        <span><img class="contacts-light-bird" src="./src/images/png/light-bird.png" alt="Почтовый голубь" /></span>
-        <span><img class="contacts-light-bird is-hidden" data-bird src="./src/images/png/dark-bird.png"
-            alt="Почтовый голубь" /></span>
-      </div>
+              <span>maykon.ukraine@gmail.com</span>
+            </a>
+          </li>
+        </ul>
+      </address>
+      <span><img class="contacts-light-bird" src="./src/images/png/light-bird.png" alt="Почтовый голубь" /></span>
+      <span><img class="contacts-light-bird is-hidden" data-bird src="./src/images/png/dark-bird.png"
+          alt="Почтовый голубь" /></span>
     </section>
   </main>
-  <footer>Footer should be here!</footer>
+  <!-- Футер -->
+  <footer class="container">
+    <div class="footer-wrapper">
+      <nav class="footer-nav">
+        <a href="./index.html" class="logo-footer">
+          <img src="./src/images/svg/Logo-footer.svg" alt="logo Maykon" width="95" height="20" />
+        </a>
+
+        <ul class="footer-nav-list list flex">
+          <li class="footer-nav__item">
+            <a href="./index.html" class="link current">Главная</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./pages/portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./pages/services.html" class="link">Услуги</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./pages/aboutUs.html" class="link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <p>&#169; , Inc. 2021</p>
+    </div>
+  </footer>
   <script src="./src/js/modal.js"></script>
   <script src="./src/js/menu.js"></script>
   <script src="./src/js/bird.js"></script>
