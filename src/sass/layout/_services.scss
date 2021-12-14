@@ -1,0 +1,110 @@
+.services-wrapper {
+  // display: flex;
+  // text-align: center;
+}
+
+.services-title {
+  text-align: center;
+}
+
+.services-text {
+  text-align: center;
+}
+
+.services__ {
+  &list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  &item_text {
+    color: var(--secondary-text-color);
+    padding: 17px;
+    padding-top: 0px;
+    //   color: black;
+    // //   font-size: 16px;
+    // //   line-height: 24px;
+    //   text-align: center;
+  }
+
+  // &list {
+  //   text-align: left;
+  // //   display: inline-block;
+  //   margin-left: -30px;
+  //   margin-top: -30px;
+  // }
+
+  &item {
+    margin-top: 30px;
+    //   margin-left: 30px;
+    width: 288px;
+    height: 220px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+  }
+
+  &item_title {
+    //   color: var(--title-text-color);
+    display: inline-block;
+    padding-right: 17px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    width: 228px;
+    //   font-size: 24px;
+    //   font-weight: bold;
+    //   line-height: 1.14;
+    //   text-transform: uppercase;
+    //   margin-top: 10px;
+    //   margin-bottom: 10px;
+    text-align: start;
+    // vertical-align: ;
+    // margin-top: -100px;
+    // padding:  17px 17px 17px 0px;
+    float: right;
+    padding-top: 17px;
+  }
+
+//   &item_title:first-child {
+//     padding-top: 30px;
+//   }
+
+  &item::before {
+    display: inline-block;
+    padding: 35px 20px 35px 35px;
+    content: "";
+    width: 39px;
+    height: 39px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-color: var(--special-background-color);
+    border-radius: 4px;
+  }
+
+  &item_link {
+    text-align: end;
+    // padding: 17px;
+    padding-left: 125px;
+    padding-right: 17px;
+  }
+}
+
+.first {
+    padding-top: 30px;
+  }
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-first::before {
+  // display: block;
+  background-image: url("./../images/svg/services.svg");
+  background-size: 39px;
+}

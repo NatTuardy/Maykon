@@ -11,6 +11,7 @@
 
 .section-special-second {
   background-color: var(--secondary-background-color);
+  padding-top: 0px;
 }
 // @media screen and (min-width: 768px) {
 //   .section,
@@ -27,13 +28,18 @@
     padding-bottom: 80px;
   }
 
+  // .section-special-first {
+  //   padding-top: 94px;
+  //   padding-bottom: 47px;
+  // }
+
   .section-special-first {
-    padding-top: 94px;
-    padding-bottom: 47px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
-  .section-special-second {
-    padding-top: 47px;
-    padding-bottom: 94px;
-  }
+  // .section-special-second {
+  //   padding-top: 47px;
+  //   padding-bottom: 94px;
+  // }
 }
