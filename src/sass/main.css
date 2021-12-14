@@ -1449,7 +1449,7 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .address__link:hover, .address__link:focus {
+  .address__link:active {
     color: var(--accent-color);
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1474,10 +1474,10 @@ img {
     border: solid 1px var(--additional-text-color);
     border-radius: 50%;
   }
-  .address__button:hover, .address__button:focus {
+  .address__button:active {
     border: solid 1px var(--accent-color);
   }
-  .address__button:hover .address__icon, .address__button:focus .address__icon {
+  .address__button:active .address__icon {
     fill: var(--accent-color);
   }
   .address {
