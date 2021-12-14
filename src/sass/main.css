@@ -1314,32 +1314,14 @@ img {
 }
 
 .slider-wrap {
-  width: 300px;
-  height: 500px;
-  position: relative;
-  left: 50%;
-  margin-left: -150px;
-  top: 50%;
-  margin-top: -225px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .slider {
   width: 100%;
-  height: 100%;
   overflow: hidden;
-}
-
-.ms-touch.slider {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -ms-overflow-style: none;
-  /* Hides the scrollbar. */
-  -ms-scroll-chaining: none;
-  /* Prevents Metro from swiping to the next tab or app. */
-  -ms-scroll-snap-type: mandatory;
-  /* Forces a snap scroll behavior on your images. */
-  -ms-scroll-snap-points-x: snapInterval(0%, 100%);
-  /* Defines the y and x intervals to snap to when scrolling. */
 }
 
 .holder {
@@ -1351,46 +1333,19 @@ img {
 
 .slide-wrapper {
   width: 20%;
-  height: 100%;
   float: left;
-  height: 500px;
   position: relative;
   overflow: hidden;
-}
-
-.slide {
-  height: 100%;
-  position: relative;
-}
-
-.temp {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  font-size: 100px;
-  bottom: 15px;
-  left: 15px;
-  font-family: 'Josefin Slab', serif;
-  font-weight: 100;
+  background-color: #838af3;
 }
 
 .slide img {
-  position: absolute;
-  z-index: 0;
-  -webkit-transform: translatex(-100px);
-          transform: translatex(-100px);
+  width: 100%;
 }
 
-.slide:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
+.slide-image {
   width: 100%;
-  height: 40%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
-  background: linear-gradient(transparent, black);
+  height: auto;
 }
 
 /* .slide div {
