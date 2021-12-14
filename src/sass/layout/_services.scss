@@ -1,5 +1,7 @@
 .services-wrapper {
+  padding: 0 1em;
   // display: flex;
+  // flex-direction: column;
   // text-align: center;
 }
 
@@ -17,6 +19,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: space-around;
+    width: 100%;
   }
 
   &item_text {
@@ -68,9 +72,9 @@
     padding-top: 17px;
   }
 
-//   &item_title:first-child {
-//     padding-top: 30px;
-//   }
+  //   &item_title:first-child {
+  //     padding-top: 30px;
+  //   }
 
   &item::before {
     display: inline-block;
@@ -94,8 +98,8 @@
 }
 
 .first {
-    padding-top: 30px;
-  }
+  padding-top: 30px;
+}
 
 .link:hover,
 .link:focus {
@@ -107,4 +111,12 @@
   // display: block;
   background-image: url("./../images/svg/services.svg");
   background-size: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  .services__ {
+    &list {
+      flex-direction: row;
+    }
+  }
 }
