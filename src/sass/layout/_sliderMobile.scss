@@ -1,4 +1,123 @@
-// @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+// // @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+
+// .animate {
+//   transition: transform 0.3s ease-out;
+// }
+
+// // html,
+// // body {
+// //   height: 100%;
+// // }
+
+// // body {
+// //   margin: 0;
+// //   padding: 0;
+// //   overflow: hidden;
+// // }
+
+// .slider-wrap {
+// //   width: 100%;
+// //   height: 500px;
+  
+//   position: relative;
+// //   left: 50%;
+// //   margin-left: -150px;
+// //   top: 50%;
+// //   margin-top: -225px;
+// }
+
+// .slider {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+// }
+
+// .ms-touch.slider {
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+  
+//   -ms-overflow-style: none;
+//   /* Hides the scrollbar. */
+  
+//   -ms-scroll-chaining: none;
+//   /* Prevents Metro from swiping to the next tab or app. */
+  
+//   -ms-scroll-snap-type: mandatory;
+//   /* Forces a snap scroll behavior on your images. */
+  
+//   -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+//   /* Defines the y and x intervals to snap to when scrolling. */
+// }
+
+// // .holder {
+// //     background: red;
+// //   width: 300%;
+// //   max-height: 500px;
+// //   height: 100%;
+// //   overflow-y: hidden;
+// // }
+
+
+// .holder {
+//     background: red;
+//   width: 300%;
+//   max-height: 500px;
+//   height: 300px;
+//   overflow-y: hidden;
+// }
+
+// .slide-wrapper {
+// //   width: 33.333%;
+//   width: 20%;
+//   height: 100%;
+//   float: left;
+//   height: 500px;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+// .slide {
+//   height: 100%;
+//   position: relative;
+// }
+
+// .temp {
+//   position: absolute;
+//   z-index: 1;
+//   color: white;
+//   font-size: 100px;
+//   bottom: 15px;
+//   left: 15px;
+//   font-family: 'Josefin Slab', serif;
+//   font-weight: 100;
+// }
+
+// .slide-image {
+//   position: absolute;
+//   z-index: 0;
+// //   transform: translatex(-100px);
+// // width: 500px;
+// // height: 300px;
+// }
+
+// .slide:before {
+//   content: "";
+//   position: absolute;
+//   z-index: 1;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 40%;
+//   background: linear-gradient(transparent, black);
+// }
+
+// .slide div {
+//   width: 300px;
+//   height: 500px;
+//   z-index: 0;
+// }
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
 
 .animate {
   transition: transform 0.3s ease-out;
@@ -16,14 +135,13 @@
 // }
 
 .slider-wrap {
-//   width: 100%;
-//   height: 500px;
-  
+  width: 300px;
+  height: 500px;
   position: relative;
-//   left: 50%;
-//   margin-left: -150px;
-//   top: 50%;
-//   margin-top: -225px;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -225px;
 }
 
 .slider {
@@ -49,25 +167,14 @@
   /* Defines the y and x intervals to snap to when scrolling. */
 }
 
-// .holder {
-//     background: red;
-//   width: 300%;
-//   max-height: 500px;
-//   height: 100%;
-//   overflow-y: hidden;
-// }
-
-
 .holder {
-    background: red;
-  width: 300%;
+  width: 500%;
   max-height: 500px;
-  height: 300px;
+  height: 100%;
   overflow-y: hidden;
 }
 
 .slide-wrapper {
-//   width: 33.333%;
   width: 20%;
   height: 100%;
   float: left;
@@ -92,12 +199,10 @@
   font-weight: 100;
 }
 
-.slide-image {
+.slide img {
   position: absolute;
   z-index: 0;
-//   transform: translatex(-100px);
-// width: 500px;
-// height: 300px;
+  transform: translatex(-100px);
 }
 
 .slide:before {
@@ -111,8 +216,8 @@
   background: linear-gradient(transparent, black);
 }
 
-.slide div {
+/* .slide div {
   width: 300px;
   height: 500px;
   z-index: 0;
-}
+} */

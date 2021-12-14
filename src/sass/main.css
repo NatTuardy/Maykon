@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
 :root {
   --primary-white-color: #ffffff;
   --accent-color: #6759f6;
@@ -1313,7 +1314,13 @@ img {
 }
 
 .slider-wrap {
+  width: 300px;
+  height: 500px;
   position: relative;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -225px;
 }
 
 .slider {
@@ -1336,10 +1343,9 @@ img {
 }
 
 .holder {
-  background: red;
-  width: 300%;
+  width: 500%;
   max-height: 500px;
-  height: 300px;
+  height: 100%;
   overflow-y: hidden;
 }
 
@@ -1368,9 +1374,11 @@ img {
   font-weight: 100;
 }
 
-.slide-image {
+.slide img {
   position: absolute;
   z-index: 0;
+  -webkit-transform: translatex(-100px);
+          transform: translatex(-100px);
 }
 
 .slide:before {
@@ -1385,12 +1393,11 @@ img {
   background: linear-gradient(transparent, black);
 }
 
-.slide div {
+/* .slide div {
   width: 300px;
   height: 500px;
   z-index: 0;
-}
-
+} */
 .contacts-wrapper {
   display: none;
 }

@@ -79,7 +79,7 @@ if (navigator.msMaxTouchPoints) {
       var absMove = Math.abs(this.index*this.slideWidth - this.movex);
       // Calculate the index. All other calculations are based on the index.
       if (absMove > this.slideWidth/2 || this.longTouch === false) {
-        if (this.movex > this.index*this.slideWidth && this.index < 2) {
+        if (this.movex > this.index*this.slideWidth && this.index < 4) {
           this.index++;
         } else if (this.movex < this.index*this.slideWidth && this.index > 0) {
           this.index--;
