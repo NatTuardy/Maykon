@@ -70,8 +70,8 @@
     border: solid 1px var(--additional-text-color);
     border-radius: 50%;
 
-    // &:hover,
-    // &:focus,
+    &:hover,
+    &:focus,
     &:active {
       border: solid 1px var(--accent-color);
       & .address__icon {
