@@ -101,7 +101,7 @@
 
   &checkbox:checked + &checkbox-icon {
     fill: var(--primary-white-color);
-    background-image: url('../images/svg/check.svg');
+    background-image: url("../images/svg/check.svg");
     background-size: cover;
     background-color: var(--accent-color);
     border-color: var(--accent-color);
@@ -110,7 +110,7 @@
 
 // 000000000000000000000000000000
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal__ {
     &policy-label {
       font-size: 14px;
