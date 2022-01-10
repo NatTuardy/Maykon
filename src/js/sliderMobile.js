@@ -95,3 +95,23 @@ if (navigator.msMaxTouchPoints) {
 
   slider.init();
 }
+
+console.log(basicLightbox)
+const btn = document.querySelector(".btn")
+console.log(btn)
+btn.addEventListener("click", ()=> {
+  // const instance = basicLightbox.create(`
+  //     <video controls>
+  //         <source src="./video/bandicam 2021-08-21 12-48-36-817.mp4" type="video/mp4">
+  //     </video>
+  // `)
+  
+  // instance.show()
+
+  const instance = basicLightbox.create(`
+    <iframe src="https://www.youtube.com/embed/E1oZhEIrer4" width="560" height="315" frameborder="0"></iframe>
+`)
+console.log("1",instance)
+instance.show()
+
+})
