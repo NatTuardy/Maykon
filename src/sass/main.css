@@ -101,9 +101,9 @@ img {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1200px;
+    width: 1440px;
   }
 }
 
@@ -712,7 +712,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #ececec;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -722,6 +721,7 @@ img {
 }
 
 .page-header-tab {
+  border-top: 1px solid #ececec;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -1227,6 +1227,103 @@ img {
   }
 }
 
+.about_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 90px 0 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.about_description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.about_picture {
+  display: block;
+  width: 50%;
+  height: 440px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.2)), to(rgba(47, 48, 58, 0.2))), url("./../images/jpg/aboutus.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2)), url("./../images/jpg/aboutus.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team {
+  padding: 100px 0;
+}
+
+.team_title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.team_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team_item {
+  width: 242px;
+  margin: 0 25px;
+}
+
+.team_suptitle {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 16px 16px 0 16px;
+  text-align: left;
+}
+
+.team_description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin: 16px;
+}
+
+.team_image {
+  background-color: #ad7d7d;
+}
+
 .services-wrapper {
   padding: 0 1em;
 }
@@ -1402,7 +1499,7 @@ img {
     text-align: left;
     height: 220px;
     position: relative;
-    padding: 40px 32px 40px 200px;
+    padding: 40px 32px 40px auto;
     background: -webkit-gradient(linear, left top, right top, from(#72a2dd), color-stop(13.63%, #94b5de), color-stop(31.66%, #bac9df), color-stop(49.58%, #d8dae0), color-stop(67.13%, #eee6e1), color-stop(84.14%, #fbede1), to(#ffffff));
     background: linear-gradient(to right, #72a2dd 0%, #94b5de 13.63%, #bac9df 31.66%, #d8dae0 49.58%, #eee6e1 67.13%, #fbede1 84.14%, #ffffff 100%);
   }
