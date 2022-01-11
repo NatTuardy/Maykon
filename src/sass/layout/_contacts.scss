@@ -2,14 +2,14 @@
   display: none;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .contacts-wrapper {
     display: flex;
     flex-direction: row;
     text-align: left;
     height: 220px;
     position: relative;
-    padding: 40px 32px 40px 200px;
+    padding: 40px 32px 40px auto;
     background: linear-gradient(
       to right,
       #72a2dd 0%,
