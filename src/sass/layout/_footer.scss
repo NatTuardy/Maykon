@@ -1,3 +1,8 @@
+.footer {
+  color: var(--additional-text-color);
+  background: var(--special-background-color);
+}
+
 .footer-wrapper {
   position: relative;
   padding: 40px 25px;
@@ -6,8 +11,6 @@
   align-items: center;
   font-size: 12px;
   font-weight: 500;
-  color: var(--additional-text-color);
-  background: var(--special-background-color);
 }
 
 .footer-nav-list {

@@ -1,24 +1,24 @@
-.feature__ {
-  &text {
+.feature {
+  &__text {
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 24px;
     text-align: center;
   }
 
-  &list {
+  &__list {
     text-align: left;
     //   display: inline-block;
     margin-left: -30px;
     margin-top: -30px;
   }
 
-  &item {
+  &__item {
     margin-top: 30px;
     margin-left: 30px;
   }
 
-  &title {
+  &__title {
     color: var(--title-text-color);
     font-size: 24px;
     font-weight: bold;
@@ -29,7 +29,7 @@
     text-align: center;
   }
 
-  &item::before {
+  &__item::before {
     display: block;
     content: "";
     height: 90px;
@@ -66,8 +66,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .feature__ {
-    &list {
+  .feature {
+    &__list {
       display: flex;
       // flex-direction: row;
       flex-wrap: wrap;
@@ -75,18 +75,18 @@
       // margin-top: -30px;
     }
 
-    &item {
+    &__item {
       flex-basis: calc((100% - 60px) / 2);
     }
 
-    &title {
+    &__title {
       // text-align: left;
     }
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .feature__ {
+  .feature {
     // &list {
     //   display: flex;
     //   flex-direction: row;
@@ -95,7 +95,7 @@
     //   margin-top: -30px;
     // }
 
-    &item {
+    &__item {
       // margin-top: 30px;
       // margin-left: 30px;
       flex-basis: calc((100% - 120px) / 4);

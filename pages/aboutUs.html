@@ -16,76 +16,78 @@
 <body>
 
 
-  <header class="page-header container">
-    <div class="flex page-header-tab">
-      <nav class="nav flex">
-        <a href="./index.html" class="logo logo-header">
-          <img src="../../src/images/svg/logo-header.svg" alt="logo Maykon" width="95" height="20" />
+  <header class="page-header ">
+    <div class="container">
+      <div class="flex page-header-tab">
+        <nav class="nav flex">
+          <a href="./index.html" class="logo logo-header">
+            <img src="../../src/images/svg/logo-header.svg" alt="logo Maykon" width="95" height="20" />
 
-        </a>
+          </a>
 
-        <ul class="site-nav list">
-          <li class="site-nav__item">
-            <a href="./index.html" class="link current">Главная</a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="../index.html" class="link">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./services.html" class="link">Услуги</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./aboutUs.html" class="link  current">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="auth-nav list">
+          <li class="auth-nav__item">
+            <a href="mailto:maykon.ukraine@gmail.com" class="button">
+              <svg class="auth-nav__icon" width="16" height="12">
+                <use href="./src/images/icons.svg#icon-envelope"></use>
+              </svg>
+              maykon.ukraine@gmail.com</a>
           </li>
-          <li class="site-nav__item">
-            <a href="./pages/portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./pages/services.html" class="link">Услуги</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./pages/aboutUs.html" class="link">О нас</a>
+          <li class="auth-nav__item">
+            <a href="tel:+380677149734" class="button">
+              <svg class="auth-nav__icon" width="10" height="16">
+                <use href="./src/images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 067 714 97 34</a>
           </li>
         </ul>
-      </nav>
+      </div>
+      <button class="burger-btn" data-menu-open>
+        <svg class="burger-btn__icon" width="40" height="40">
+          <use href="./src/images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
 
-      <ul class="auth-nav list">
-        <li class="auth-nav__item">
-          <a href="mailto:maykon.ukraine@gmail.com" class="button">
-            <svg class="auth-nav__icon" width="16" height="12">
-              <use href="./src/images/icons.svg#icon-envelope"></use>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./src/images/icons.svg#icon-close"></use>
             </svg>
-            maykon.ukraine@gmail.com</a>
-        </li>
-        <li class="auth-nav__item">
-          <a href="tel:+380677149734" class="button">
-            <svg class="auth-nav__icon" width="10" height="16">
-              <use href="./src/images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 067 714 97 34</a>
-        </li>
-      </ul>
-    </div>
-    <button class="burger-btn" data-menu-open>
-      <svg class="burger-btn__icon" width="40" height="40">
-        <use href="./src/images/icons.svg#icon-burger"></use>
-      </svg>
-    </button>
-
-    <div class="mobile-menu" data-menu>
-      <div class="container mobile-menu__container">
-        <button class="mobile-menu__close-btn" data-menu-close>
-          <svg class="mobile-menu__close-icon" width="40" height="40">
-            <use href="./src/images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="nav-list list">
-          <li class="nav-list__item">
-            <a href="./index.html" class="nav-list__link link">Главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./pages/portfolio.html" class="nav-list__link link">Портфолио</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./pages/services.html" class="nav-list__link link">Услуги</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./pages/aboutUs.html" class="nav-list__link link">О нас</a>
-          </li>
-        </ul>
-        <a class="header__tel link" href="tel:+380677149734">+38 067 714 97 34</a>
-        <a class="header__mail-link" href="mailto:maykon.ukraine@gmail.com">maykon.ukraine@gmail.com</a>
+          </button>
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a href="./index.html" class="nav-list__link link">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./portfolio.html" class="nav-list__link link">Портфолио</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./services.html" class="nav-list__link link">Услуги</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./aboutUs.html" class="nav-list__link link">О нас</a>
+            </li>
+          </ul>
+          <a class="header__tel link" href="tel:+380677149734">+38 067 714 97 34</a>
+          <a class="header__mail-link" href="mailto:maykon.ukraine@gmail.com">maykon.ukraine@gmail.com</a>
+        </div>
       </div>
     </div>
   </header>
