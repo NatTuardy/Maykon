@@ -1,5 +1,108 @@
-.contacts_wrapper {
-  display: none;
+// .contacts_wrapper {
+//   display: none;
+// }
+
+.contacts {
+  // background: linear-gradient(
+  //   to g,
+  // );
+  background: linear-gradient(
+    222.15deg,
+    #72a2dd -55.68%,
+    #98b7de -33.39%,
+    #b7c8df -9.79%,
+    #d2d6e0 15.9%,
+    #e6e1e0 44.08%,
+    #f4e9e1 75.96%,
+    #fceee1 114.66%,
+    #ffefe1 179.22%,
+    rgba(255, 239, 225, 0) 418.67%
+  );
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 384px;
+    position: relative;
+    padding: 40px 0;
+  }
+
+  &_bird {
+    position: absolute;
+    width: 278px;
+    height: 123px;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 24px;
+  }
+}
+
+.address {
+  &_item {
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  &_subtitle {
+    display: flex;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 2.5;
+    margin-bottom: 16px;
+  }
+
+  &_link {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    &:active {
+      color: var(--accent-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transperent;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border: solid 1px var(--additional-text-color);
+    border-radius: 50%;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: solid 1px var(--accent-color);
+      & .address_icon {
+        fill: var(--accent-color);
+      }
+    }
+  }
+
+  &_icon {
+    fill: var(--additional-text-color);
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_link {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1440px) {
@@ -25,22 +128,19 @@
 
     &_bird {
       position: absolute;
-      width: 284px;
-      height: 140px;
       bottom: 58px;
-      right: 80px;
+      right: 100px;
+      transform: translateX(0);
     }
   }
 
   .address {
     &_item {
-      font-style: normal;
-      font-size: 20px;
+      margin-right: 90px;
     }
 
     &_subtitle {
       display: flex;
-      font-style: Regular;
       font-size: 18px;
       line-height: 2.5;
       margin-bottom: 16px;
@@ -87,10 +187,7 @@
 
     &_list {
       display: flex;
-    }
-
-    &_item {
-      margin-right: 90px;
+      flex-direction: row;
     }
 
     &_link {

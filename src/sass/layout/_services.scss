@@ -7,8 +7,6 @@
 }
 
 .services-title {
-  font-size: 24px;
-  font-weight: 700;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -115,6 +113,17 @@
 
     &item {
       width: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services-text {
+    font-size: 20px;
+  }
+  .services__ {
+    &item {
+      width: 300px;
     }
   }
 }

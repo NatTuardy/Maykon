@@ -11,8 +11,6 @@
   }
 
   &__wrapper {
-    // margin: 0 auto;
-    // width: 288px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   }
 
@@ -21,6 +19,8 @@
   }
 
   &__title {
+    text-align: left;
+
     margin-bottom: 24px;
     color: var(--primary-text-color);
   }
@@ -47,13 +47,13 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .about-us {
-    &__wrapper {
-      // width: 588px;
-    }
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .about-us {
+//     &__wrapper {
+//       width: 588px;
+//     }
+//   }
+// }
 
 @media screen and (min-width: 1440px) {
   .about-us {
@@ -62,14 +62,13 @@
 
     &__wrapper {
       display: flex;
-      width: 1044px;
     }
 
     &__image-wrapper {
-      width: 522px;
+      width: 50%;
     }
     &__text-wrapper {
-      width: 522px;
+      width: 50%;
     }
   }
 }
