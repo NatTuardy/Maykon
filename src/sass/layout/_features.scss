@@ -15,10 +15,11 @@
     //   display: inline-block;
     // margin-left: -30px;
     // margin-top: -30px;
+    padding-bottom: 32px;
   }
 
   &item {
-    // margin-top: 30px;
+    padding-top: 32px;
     // margin-left: 30px;
   }
 
@@ -28,26 +29,26 @@
     font-weight: bold;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    // margin-top: 10px;
+    margin-bottom: 16px;
     text-align: center;
   }
 
   &item::before {
     display: block;
     content: "";
-    height: 90px;
+    height: 60px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    //background-color: var(--special-background-color);
+    margin-bottom: 16px;
     border-radius: 4px;
   }
 }
 
 .icon-experience::before {
-  display: block;
   background-image: url("./../images/svg/Ic_experience.svg");
+  display: block;
   background-size: 50px;
 }
 
@@ -73,6 +74,7 @@
   .feature__ {
     &list {
       display: flex;
+      justify-content: space-around;
       // flex-direction: row;
       flex-wrap: wrap;
       // margin-left: -30px;

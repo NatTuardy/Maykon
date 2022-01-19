@@ -68,3 +68,21 @@ console.log('wooouuu')
 //     pos = pos == 0 ? numOfSlides-1 : --pos;
 //     slides.eq(pos).css({left:'-100%'}).animate({left:0},500);
 // }
+
+// Задано
+// const array = ["test1", "test2", "test3"];
+
+// Результат
+// output = {
+//   0: "test1",
+//   1: "test2",
+//   2: "test3",
+// };
+
+// const newArr = array.reduce((acc, item, idx)=> {
+//   acc[idx] = item
+//   return acc
+
+// }, {})
+
+// console.log('newArr', newArr)

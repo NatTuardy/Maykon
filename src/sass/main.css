@@ -1081,30 +1081,38 @@ img {
   text-align: center;
 }
 
+.feature__list {
+  padding-bottom: 32px;
+}
+
+.feature__item {
+  padding-top: 32px;
+}
+
 .feature__title {
   color: var(--title-text-color);
   font-size: 40px;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .feature__item::before {
   display: block;
   content: "";
-  height: 90px;
+  height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 16px;
   border-radius: 4px;
 }
 
 .icon-experience::before {
-  display: block;
   background-image: url("./../images/svg/Ic_experience.svg");
+  display: block;
   background-size: 50px;
 }
 
@@ -1131,6 +1139,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1158,7 +1168,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px auto;
+  margin: 40px auto;
   background: #ffffff;
 }
 
@@ -1168,8 +1178,6 @@ img {
 }
 
 .about-us__wrapper {
-  margin: 0 auto;
-  width: 288px;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 }
@@ -1185,6 +1193,7 @@ img {
 
 .about-us__text {
   margin-bottom: 27px;
+  color: var(--secondary-text-color);
 }
 
 .about-us__link {
@@ -1193,6 +1202,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
 }
 
 .about-us:active .about-us__link,
@@ -1201,12 +1211,6 @@ img {
   color: var(--accent-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 768px) {
-  .about-us__wrapper {
-    width: 588px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1408,14 +1412,19 @@ img {
 }
 
 .services-wrapper {
-  padding: 0 1em;
+  margin: 40px auto;
 }
 
 .services-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .services-text {
+  font-size: 14px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -1447,13 +1456,26 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 16px;
   padding: 16px;
   width: 288px;
   background: #ffffff;
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.services__item a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.services__item:active .services__item_link,
+.services__item:hover .services__item_link,
+.services__item:focus .services__item_link {
+  color: var(--accent-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services__item_title.icon-first::before {
@@ -1487,20 +1509,25 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
+  text-align: left;
 }
 
 .services__item_text {
   display: block;
-  color: var(--secondary-text-color);
-  font-size: 16px;
+  color: var(--primary-text-color);
+  font-size: 14px;
   margin-top: 16px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .services__item_link {
-  margin-top: 19px;
+  margin: 20px 0;
   display: block;
   text-align: right;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .link:hover,
@@ -1516,6 +1543,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .services__item {
+    width: 226px;
   }
 }
 
@@ -1747,7 +1777,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .footer-nav__item:not(:last-child) {
     margin-right: 16px;
   }
