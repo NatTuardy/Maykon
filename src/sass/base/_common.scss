@@ -6,13 +6,11 @@ body {
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.5;
- 
 }
 
 h2 {
   font-size: 32px;
   font-weight: 700;
-  
 }
 
 h3 {
@@ -46,7 +44,6 @@ img {
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
-
 }
 
 .list {
@@ -65,4 +62,15 @@ img {
 
 .no-margin {
   margin: 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 1440px) {
+    font-size: 32px;
+  }
 }

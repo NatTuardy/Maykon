@@ -1,91 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maykon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="http://www.menucool.com/slider/jsImgSlider/themes/6/js-image-slider.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/sass/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maykon</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" type="text/css" href="./src/sass/main.css" />
-</head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="page-header">
+        <div class="flex page-header-tab">
+          <nav class="nav flex">
+            <a href="./index.html" class="logo logo-header">
+              <img
+                src="./src/images/svg/logo-header.svg"
+                alt="logo Maykon"
+                width="187"
+                height="38"
+              />
+            </a>
 
-<body>
-  <!-- Шапка сайта -->
-  <header class="page-header container">
-    <div class="flex page-header-tab">
-      <nav class="nav flex">
-        <a href="./index.html" class="logo logo-header">
-          <img src="./src/images/svg/logo-header.svg" alt="logo Maykon" width="95" height="20" />
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="link current">Главная</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./pages/portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./pages/services.html" class="link">Услуги</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./pages/aboutUs.html" class="link">О нас</a>
+              </li>
+            </ul>
+          </nav>
 
-        </a>
-
-        <ul class="site-nav list">
-          <li class="site-nav__item">
-            <a href="./index.html" class="link current">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./pages/portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./pages/services.html" class="link">Услуги</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./pages/aboutUs.html" class="link">О нас</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="auth-nav list">
-        <li class="auth-nav__item">
-          <a href="mailto:maykon.ukraine@gmail.com" class="button">
-            <svg class="auth-nav__icon" width="16" height="12">
-              <use href="./src/images/icons.svg#icon-envelope"></use>
-            </svg>
-            maykon.ukraine@gmail.com</a>
-        </li>
-        <li class="auth-nav__item">
-          <a href="tel:+380677149734" class="button">
-            <svg class="auth-nav__icon" width="10" height="16">
-              <use href="./src/images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 067 714 97 34</a>
-        </li>
-      </ul>
-    </div>
-    <button class="burger-btn" data-menu-open>
-      <svg class="burger-btn__icon" width="40" height="40">
-        <use href="./src/images/icons.svg#icon-burger"></use>
-      </svg>
-    </button>
-
-    <div class="mobile-menu" data-menu>
-      <div class="container mobile-menu__container">
-        <button class="mobile-menu__close-btn" data-menu-close>
-          <svg class="mobile-menu__close-icon" width="40" height="40">
-            <use href="./src/images/icons.svg#icon-close"></use>
+          <ul class="auth-nav list">
+            <li class="auth-nav__item">
+              <a href="mailto:maykon.ukraine@gmail.com" class="button">
+                <svg class="auth-nav__icon" width="16" height="12">
+                  <use href="./src/images/icons.svg#icon-envelope"></use>
+                </svg>
+                maykon.ukraine@gmail.com</a
+              >
+            </li>
+            <li class="auth-nav__item">
+              <a href="tel:+380677149734" class="button">
+                <svg class="auth-nav__icon" width="10" height="16">
+                  <use href="./src/images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 067 714 97 34</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon" width="40" height="40">
+            <use href="./src/images/icons.svg#icon-burger"></use>
           </svg>
         </button>
-        <ul class="nav-list list">
-          <li class="nav-list__item">
-            <a href="./index.html" class="nav-list__link link">Главная</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./pages/portfolio.html" class="nav-list__link link">Портфолио</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./pages/services.html" class="nav-list__link link">Услуги</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="./pages/aboutUs.html" class="nav-list__link link">О нас</a>
-          </li>
-        </ul>
-        <a class="header__tel link" href="tel:+380677149734">+38 067 714 97 34</a>
-        <a class="header__mail-link" href="mailto:maykon.ukraine@gmail.com">maykon.ukraine@gmail.com</a>
-        <!-- <ul class="mobile-social-list list">
+
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon" width="40" height="40">
+                <use href="./src/images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="nav-list list">
+              <li class="nav-list__item">
+                <a href="./index.html" class="nav-list__link link">Главная</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="./pages/portfolio.html" class="nav-list__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="./pages/services.html" class="nav-list__link link"
+                  >Услуги</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="./pages/aboutUs.html" class="nav-list__link link"
+                  >О нас</a
+                >
+              </li>
+            </ul>
+            <a class="header__tel link" href="tel:+380677149734"
+              >+38 067 714 97 34</a
+            >
+            <a class="header__mail-link" href="mailto:maykon.ukraine@gmail.com"
+              >maykon.ukraine@gmail.com</a
+            >
+            <!-- <ul class="mobile-social-list list">
                     <li class="mobile-social-list__item">
                         <a href="" class="mobile-social-list__link link">Instagram</a>
                     </li>
@@ -99,169 +129,311 @@
                         <a href="" class="mobile-social-list__link link">LinkedIn</a>
                     </li>
                 </ul> -->
-      </div>
-    </div>
-  </header>
-  <main class="container">
-    <!-- Видеофон -->
-    <section class="intro">
-      <div class="intro-media">
-        <video class="intro-media-video" src="./src/images/video/Шапка.mp4" autoplay muted loop></video>
-      </div>
-      <div class="intro-content">
-        <h1 class="intro-content">Добро пожаловать</h1>
-        <h2 class="intro-content">на мой сайт</h2>
-      </div>
-    </section>
-    <!-- Преимущества -->
-
-    <section class="section-special-first">
-      <div class="container">
-        <ul class="feature__list list">
-          <li class="feature__item icon-experience">
-            <h3 class="feature__title">20</h3>
-            <p class="feature__text">Years of experience</p>
-          </li>
-          <li class="feature__item icon-projects">
-            <h3 class="feature__title">1000</h3>
-            <p class="feature__text">Project completed</p>
-          </li>
-          <li class="feature__item icon-engenners">
-            <h3 class="feature__title">500</h3>
-            <p class="feature__text">Experts</p>
-          </li>
-          <li class="feature__item icon-countries">
-            <h3 class="feature__title">5</h3>
-            <p class="feature__text">Countries</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Про нас -->
-
-    <section class="section section-special-second about-us">
-      <a class="link" href="./pages/aboutUs.html">
-        <div class="about-us__wrapper">
-          <div class="about-us__image-wrapper">
-            <img src="./src/images/jpg/aboutus.jpg" alt="Наша команда">
-          </div>
-          <div class="about-us__text-wrapper container">
-            <h2 class="about-us__title">О нас</h2>
-            <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate distinctio
-              repellendus accusamus nesciunt, dicta error laborum facilis dignissimos fuga, animi veritatis ab rerum
-              culpa
-              incidunt mollitia provident quidem dolor.</p>
-            <a class="about-us__link" href="./pages/aboutUs.html"> Узнать больше ></a>
           </div>
         </div>
-      </a>
-    </section>
-
-    <!-- Наши услуги -->
-    <section class="section-special-first">
-      <div class="services-wrapper">
-        <h2 class="services-title">Наши услуги</h2>
-        <h3 class="services-text">Предлагаем лучшие решения для ваших проектов</h3>
-        <ul class="services__list list">
-          <li class="services__item">
-            <h3 class="services__item_title icon-first">Продажа / Аренда</h3>
-            <p class="services__item_text">Немного текста описания про то, что можно купить, простыми словами.</p>
-            <a href="./pages/services.html" class="services__item_link link">Узнать больше ></a>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item_title icon-second">Разработка проектов</h3>
-            <p class="services__item_text">Немного текста описания про то, что можно купить, простыми словами.</p>
-            <a href="./pages/services.html" class="services__item_link link">Узнать больше ></a>
-          </li>
-          <li class="services__item">
-            <h3 class="services__item_title icon-third">Монтаж и сопровождение</h3>
-            <p class="services__item_text">Немного текста описания про то, что можно купить, простыми словами.</p>
-            <a href="./pages/services.html" class="services__item_link link">Узнать больше ></a>
-          </li>
-          <!-- <li class="feature__item icon-countries">
-            <h3 class="feature__title">5</h3>
-            <p class="feature__text">Coutries</p>
-          </li> -->
-        </ul>
       </div>
-    </section>
+    </header>
+    <main class="">
+      <!-- Видеофон -->
+      <!-- <section class="intro">
+        <div class="intro-media">
+          <video
+            class="intro-media-video"
+            src="./src/images/video/Шапка.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+        <div class="intro-content">
+          <h1 class="intro-content">Добро пожаловать</h1>
+          <h2 class="intro-content">на мой сайт</h2>
+        </div>
+      </section> -->
+      <!-- Преимущества -->
 
-    <!-- Слайдер -->
-    <section class="section-special-second ">
+      <section class="section-special-first feature">
+        <div class="container">
+          <ul class="feature__list list">
+            <li class="feature__item icon-experience">
+              <h3 class="feature__title">20</h3>
+              <p class="feature__text">Years of experience</p>
+            </li>
+            <li class="feature__item icon-projects">
+              <h3 class="feature__title">1000</h3>
+              <p class="feature__text">Project completed</p>
+            </li>
+            <li class="feature__item icon-engenners">
+              <h3 class="feature__title">500</h3>
+              <p class="feature__text">Experts</p>
+            </li>
+            <li class="feature__item icon-countries">
+              <h3 class="feature__title">5</h3>
+              <p class="feature__text">Countries</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Про нас -->
+
+      <section class="section section-special-second">
+        <div class="about-us container">
+          <a class="" href="./pages/aboutUs.html">
+            <div class="about-us__wrapper">
+              <div class="about-us__image-wrapper">
+                <img src="./src/images/jpg/aboutus.jpg" alt="Наша команда" />
+              </div>
+              <div class="about-us__text-wrapper">
+                <h2 class="about-us__title section-title">О нас</h2>
+                <p class="about-us__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  voluptate distinctio repellendus accusamus nesciunt, dicta
+                  error laborum facilis dignissimos fuga, animi veritatis ab
+                  rerum culpa incidunt mollitia provident quidem dolor.
+                </p>
+                <p class="about-us__link link">Узнать больше ></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Наши услуги -->
+      <section class="section-special-first">
+        <div class="services-wrapper container">
+          <h2 class="services-title section-title">Наши услуги</h2>
+          <h3 class="services-text">
+            Предлагаем лучшие решения для ваших проектов
+          </h3>
+          <ul class="services__list list">
+            <li class="services__item">
+              <a href="./pages/services.html">
+                <h3 class="services__item_title icon-first">
+                  Продажа / Аренда
+                </h3>
+                <p class="services__item_text">
+                  Немного текста описания про то, что можно купить, простыми
+                  словами.
+                </p>
+                <p class="services__item_link">Узнать больше ></p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="./pages/services.html">
+                <h3 class="services__item_title icon-second">
+                  Разработка проектов
+                </h3>
+                <p class="services__item_text">
+                  Немного текста описания про то, что можно купить, простыми
+                  словами.
+                </p>
+                <p class="services__item_link">Узнать больше ></p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a href="./pages/services.html">
+                <h3 class="services__item_title icon-third">
+                  Монтаж и сопровождение
+                </h3>
+                <p class="services__item_text">
+                  Немного текста описания про то, что можно купить, простыми
+                  словами.
+                </p>
+                <p class="services__item_link">Узнать больше ></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- slider -->
+
+      <!-- <section class="section-special-second ">
       <div class="slider-wrap">
         <div class="slider" id="slider">
           <div class="holder">
             <div class="slide-wrapper">
-              <div class="slide"><img class="slide-image" src="./src/images/jpg/tree.jpg" /></div>
-              <!-- <span class="temp">74</span> -->
+              <div class="slide">
+                <img class="slide-image" src="./src/images/jpg/tree.jpg" />
+              </div>
+              <span class="temp">74</span>
             </div>
             <div class="slide-wrapper">
               <div class="slide"><img class="slide-image" src="./src/images/jpg/bird.jpg" /></div>
-              <!-- <span class="temp">74</span> -->
+              <span class="temp">74</span>
             </div>
             <div class="slide-wrapper">
               <div class="slide"><img class="slide-image" src="./src/images/jpg/husha.jpg" /></div>
-              <!-- <span class="temp">74</span> -->
+              <span class="temp">74</span>
             </div>
             <div class="slide-wrapper">
               <div class="slide"><img class="slide-image" src="./src/images/jpg/fon.jpg" /></div>
-              <!-- <span class="temp">64</span> -->
+              <span class="temp">64</span>
             </div>
             <div class="slide-wrapper">
               <div class="slide"><img class="slide-image" src="./src/images/jpg/flowers.jpg" /></div>
-              <!-- <span class="temp">82</span> -->
+              <span class="temp">82</span>
             </div>
           </div>
         </div>
+      </section> -->
+
+      <!-- <div class="video-slider">
+        <div class="slide">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/YE7VzlLtp-4?ecver=2&enablejsapi=1"
+          ></iframe>
+        </div>
+
+        <div class="slide">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/YE7VzlLtp-4?ecver=2&enablejsapi=1"
+          ></iframe>
+        </div>
+
+        <div class="slide">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/YE7VzlLtp-4?ecver=2&enablejsapi=1"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe class="video" src="https://www.youtube.com/embed/onAtl5zok7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="slide-arrow left"></div>
+        <div class="slide-arrow right"></div>
       </div>
-    </section>
+      <iframe width="490" height="320" src="http://www.youtube.com/embed/DkaUsBwe0fo" frameborder="0" allowfullscreen></iframe> -->
 
-    <!-- Контакты -->
-    <section class="contacts-wrapper container">
-      <address class="address">
-        <ul class="list address__list">
-          <li class="address__item">
+      <!-- <div id="sliderFrame">
+      <h3>Youtube Video Slider Using jQuery Video Plugin</h3>
+      <div id="slider">
+          <a class="video" href="https://www.youtube.com/watch?v=a3ICNMQW7Ok">
+              <b data-src="images/image-slider-2.jpg">Vimeo</b>
+          </a>
+          <a class="video" href="http://www.youtube.com/watch?v=P0G_2tiivxE">
+              <b data-src="images/image-slider-3.jpg">Image Slider</b>
+          </a>
+          <a class="video" href="https://www.youtube.com/watch?v=a3ICNMQW7Ok" data-autovideo="1">
+              <b data-src="images/image-slider-5.jpg">Slide 5</b>
+          </a>
+      </div>
+  </div> -->
 
-            <p class="address__subtitle"><span class="address__button button "><svg class="address__icon" width="10"
-                  height="16">
-                  <use href="./src/images/icons.svg#icon-smartphone"></use>
-                </svg></span>Позвонить нам</p>
-            <a href="tel:+380677149734" class="link address__link">
+      <!-- <div class="video-slider">
+  
+    <div class="slide">
+        <div style="position:relative;height:0;padding-bottom:56.28%"><iframe src="https://www.youtube.com/embed/YE7VzlLtp-4?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+  
+    <div class="slide">
+        <div style="position:relative;height:0;padding-bottom:56.28%"><iframe src="https://www.youtube.com/embed/EngW7tLk6R8?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+   
+    <div class="slide-arrow left"></div>
+    <div class="slide-arrow right"></div>
+    </div> -->
 
+    <!-- <div class="video-slider">
+      SLIDE 1
+      <div class="slide">
+          <video class="slider-video" poster="http://tinyurl.com/ne24w38">
+              <source src="http://tinyurl.com/npmt9td" type="video/mp4" />
+              <source src="http://tinyurl.com/myowmhx" type="video/webm" />
+              <source src="http://tinyurl.com/my3pdd9" type="video/ogg" />
+          </video>
+          <div class="overlay-content">
+              <div class="play-button"></div>
+          </div>
+      </div>
+      SLIDE 2
+      <div class="slide">
+          <video class="slider-video" poster="http://tinyurl.com/ne24w38">
+              <source src="http://tinyurl.com/npmt9td" type="video/mp4" />
+              <source src="http://tinyurl.com/myowmhx" type="video/webm" />
+              <source src="http://tinyurl.com/my3pdd9" type="video/ogg" />
+          </video>
+          <div class="overlay-content">
+              <div class="play-button"></div>
+          </div>
+      </div>
+      END OF SLIDES
+      <div class="slide-arrow left"></div>
+      <div class="slide-arrow right"></div>
+  </div> -->
 
-              +38 067 714 97 34</a>
-          </li>
-          <li class="address__item">
-            <p class="address__subtitle"><span class="address__button button " data-btn-bird-toggle><svg
-                  class="address__icon" width="16" height="12">
-                  <use href="./src/images/icons.svg#icon-envelope" />
-                </svg></span>Написать нам</p>
-            <a href="mailto:maykon.ukraine@gmail.com" class="link address__link" data-link-bird-toggle>
+      <!-- Контакты -->
+      <section class="contacts">
+        <div class="container">
+          <address class="address contacts_wrapper">
+            <ul class="list address_list">
+              <li class="address_item">
+                <p class="address_subtitle">
+                  <span class="address_button button"
+                    ><svg class="address_icon" width="12" height="12">
+                      <use
+                        href="./src/images/icons.svg#telephone"
+                      ></use></svg></span
+                  >Позвонить нам
+                </p>
+                <a href="tel:+380677149734" class="link address_link">
+                  +38 067 714 97 34</a
+                >
+              </li>
+              <li class="address_item">
+                <p class="address_subtitle">
+                  <span class="address_button button" data-btn-bird-toggle
+                    ><svg class="address_icon" width="12" height="9">
+                      <use
+                        href="./src/images/icons.svg#e-mail"
+                      /></svg></span
+                  >Написать нам
+                </p>
+                <a
+                  href="mailto:maykon.ukraine@gmail.com"
+                  class="link address_link"
+                  data-link-bird-toggle
+                >
+                  <span>maykon.ukraine@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+            <!-- <span
+              ><img
+                class="contacts_bird"
+                src="./src/images/png/light-bird.png"
+                alt="Почтовый голубь"
+            /></span> -->
+            <span
+              ><img
+                class="contacts_bird"
+                src="./src/images/png/dark-bird.png"
+                alt="Почтовый голубь"
+            /></span>
+          </address>
+        </div>
+      </section>
+    </main>
 
-              <span>maykon.ukraine@gmail.com</span>
-            </a>
-          </li>
-        </ul>
-      </address>
-      <span><img class="contacts-light-bird" src="./src/images/png/light-bird.png" alt="Почтовый голубь" /></span>
-      <span><img class="contacts-light-bird is-hidden" data-bird src="./src/images/png/dark-bird.png"
-          alt="Почтовый голубь" /></span>
-    </section>
-  </main>
-
-  <!-- Футер -->
-  <footer class="container">
-    <div class="footer-wrapper">
-
+    <!-- Футер -->
+    <footer class="footer-wrapper">
       <nav class="footer-nav">
         <a href="./index.html" class="logo-footer">
-          <img src="./src/images/svg/Logo-footer.svg" alt="logo Maykon" width="95" height="20" />
+          <img
+            src="./src/images/svg/Logo-footer.svg"
+            alt="logo Maykon"
+            width="187"
+            height="38"
+          />
         </a>
 
         <ul class="footer-nav-list list flex">
           <li class="footer-nav__item">
-            <a href="./index.html" class="link current">Главная</a>
+            <a href="./index.html" class="link">Главная</a>
           </li>
           <li class="footer-nav__item">
             <a href="./pages/portfolio.html" class="link">Портфолио</a>
@@ -281,16 +453,30 @@
       </select>
 
       <p>&#169; , Inc. 2021</p>
-    </div>
-  </footer>
+    </footer>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="./src/js/modal.js"></script>
-  <script src="./src/js/sliderMobile.js"></script>
-  <script src="./src/js/menu.js"></script>
-  <script src="./src/js/bird.js"></script>
-  <script src="./build/build.js"></script>
-</body>
-
+    <script
+      src="http://www.menucool.com/slider/jsImgSlider/themes/6/mcVideoPlugin.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="http://www.menucool.com/slider/jsImgSlider/themes/6/js-image-slider.js"
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./src/js/modal.js"></script>
+    <script src="./src/js/sliderMobile.js"></script>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/slider_exemple.js"></script>
+    <script src="./build/build.js"></script>
+  </body>
 </html>
