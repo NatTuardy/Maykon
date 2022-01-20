@@ -26,7 +26,7 @@
     align-items: center;
     height: 384px;
     position: relative;
-    padding: 40px 0;
+    padding: 24px 0;
   }
 
   &_bird {
@@ -43,12 +43,15 @@
   &_item {
     font-style: normal;
     font-size: 20px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 
   &_subtitle {
     display: flex;
-    font-style: Regular;
-    font-size: 18px;
+    align-items: center;
+    font-size: 16px;
     line-height: 2.5;
     margin-bottom: 16px;
   }
@@ -57,6 +60,7 @@
     display: flex;
     align-items: baseline;
     justify-content: center;
+    font-size: 16px;
 
     &:active {
       color: var(--accent-color);
@@ -71,10 +75,10 @@
     justify-content: center;
     align-items: center;
     background: transperent;
-    padding: 12px;
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
+    // padding: 12px;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
     border: solid 1px var(--additional-text-color);
     border-radius: 50%;
 
@@ -103,6 +107,24 @@
 }
 
 @media screen and (min-width: 768px) {
+  .address {
+    &_list {
+      flex-direction: row;
+    }
+    &_item {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 54px;
+      }
+    }
+  }
+
+  .contacts {
+    &_wrapper {
+      height: 230px;
+    }
+  }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -129,7 +151,7 @@
     &_bird {
       position: absolute;
       bottom: 58px;
-      right: 100px;
+      right: 80px;
       transform: translateX(0);
     }
   }
@@ -150,6 +172,7 @@
       display: flex;
       align-items: baseline;
       justify-content: center;
+      font-size: 24px;
 
       &:active {
         color: var(--accent-color);
@@ -164,7 +187,7 @@
       justify-content: center;
       align-items: center;
       background: transperent;
-      padding: 12px;
+      // padding: 12px;
       width: 44px;
       height: 44px;
       margin-right: 10px;
@@ -183,6 +206,8 @@
 
     &_icon {
       fill: var(--additional-text-color);
+      width: 16px;
+      height: 16px;
     }
 
     &_list {

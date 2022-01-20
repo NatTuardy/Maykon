@@ -1636,7 +1636,7 @@ img {
           align-items: center;
   height: 384px;
   position: relative;
-  padding: 40px 0;
+  padding: 24px 0;
 }
 
 .contacts_bird {
@@ -1654,12 +1654,18 @@ img {
   font-size: 20px;
 }
 
+.address_item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .address_subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-style: Regular;
-  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
   line-height: 2.5;
   margin-bottom: 16px;
 }
@@ -1674,6 +1680,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 16px;
 }
 
 .address_link:active {
@@ -1695,10 +1702,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: transperent;
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
   border: solid 1px var(--additional-text-color);
   border-radius: 50%;
 }
@@ -1731,6 +1737,22 @@ img {
           justify-content: flex-start;
 }
 
+@media screen and (min-width: 768px) {
+  .address_list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .address_item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 54px;
+  }
+  .contacts_wrapper {
+    height: 230px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .contacts {
     background: -webkit-gradient(linear, left top, right top, from(#72a2dd), color-stop(13.63%, #94b5de), color-stop(31.66%, #bac9df), color-stop(49.58%, #d8dae0), color-stop(67.13%, #eee6e1), color-stop(84.14%, #fbede1), to(#ffffff));
@@ -1754,7 +1776,7 @@ img {
   .contacts_bird {
     position: absolute;
     bottom: 58px;
-    right: 100px;
+    right: 80px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -1779,6 +1801,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 24px;
   }
   .address_link:active {
     color: var(--accent-color);
@@ -1798,7 +1821,6 @@ img {
         -ms-flex-align: center;
             align-items: center;
     background: transperent;
-    padding: 12px;
     width: 44px;
     height: 44px;
     margin-right: 10px;
@@ -1813,6 +1835,8 @@ img {
   }
   .address_icon {
     fill: var(--additional-text-color);
+    width: 16px;
+    height: 16px;
   }
   .address_list {
     display: -webkit-box;
@@ -1959,6 +1983,8 @@ img {
 }
 
 /* Additionnal styles */
+/* Just a reset */
+/* Additionnal styles */
 .video-slider {
   width: 100%;
   height: 20em;
@@ -1981,10 +2007,37 @@ img {
   left: 0;
 }
 
-.video {
+.overlay-content {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  border: 0;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -2em;
+  background: red;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.play-button:after {
+  content: "\25b6";
+  font-size: 2em;
+  line-height: 1.4em;
+}
+
+video {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .slide-arrow {
@@ -1994,7 +2047,7 @@ img {
   height: 45%;
   width: 15%;
   cursor: pointer;
-  opacity: .5;
+  opacity: .2;
 }
 
 .slide-arrow:hover {
