@@ -41,10 +41,14 @@ img {
   height: auto;
 }
 
+
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+
+
+
 
 .list {
   list-style: none;
@@ -70,7 +74,12 @@ img {
   line-height: 1.25;
   color: var(--primary-text-color);
 
+
   @media screen and (min-width: 1440px) {
     font-size: 32px;
   }
+}
+
+.current {
+  color: var(--accent-color);
 }
