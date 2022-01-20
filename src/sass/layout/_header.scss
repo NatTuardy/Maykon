@@ -145,14 +145,11 @@
       line-height: 1.18;
       text-align: left;
       letter-spacing: 0.02em;
+      color: var(--primary-text-color);
     }
 
     &__item:not(:last-child) {
       margin-bottom: 32px;
-    }
-
-    &__link {
-      color: var(--primary-text-color);
     }
 
     &__link:hover,
@@ -182,6 +179,7 @@
     }
   }
 }
+
 
 @media screen and (min-width: 1024px) {
   .header__tel,
@@ -231,7 +229,6 @@
     justify-content: center;
 
     .link {
-      color: var(--primary-text-color);
       font-weight: 500;
       font-size: 18px;
       line-height: 1.14;
@@ -245,9 +242,7 @@
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .current {
-      color: var(--accent-color);
-    }
+   
     .link:hover::after,
     .link:focus::after,
     // .current::after
@@ -365,3 +360,5 @@
     // margin-left: auto;
   }
 }
+
+
